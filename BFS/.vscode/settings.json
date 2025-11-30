@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "random": "cpp",
+        "chrono": "cpp",
+        "vector": "cpp",
+        "functional": "cpp",
+        "flat_map": "cpp",
+        "flat_set": "cpp",
+        "format": "cpp",
+        "memory_resource": "cpp",
+        "ranges": "cpp",
+        "regex": "cpp",
+        "deque": "cpp",
+        "string": "cpp"
+    }
+}

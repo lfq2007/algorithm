@@ -1,0 +1,29 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "D:/mingw64/bin/g++.exe", // 你的g++路径，无需修改
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",                // 生成调试信息（F5调试必需）
+                "${file}",           // 当前打开的代码文件（如1.cpp）
+                "-o",                // 输出可执行文件
+                "${fileDirname}\\${fileBasenameNoExtension}.exe", // 输出到代码同目录
+                "-fexec-charset=GBK" // 解决Windows中文乱码（关键补充）
+            ],
+            "options": {
+                "cwd": "${fileDirname}" // 编译工作目录改为代码所在目录（核心修正）
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}

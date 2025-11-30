@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gdb - 调试活动文件",
+            "type": "cppvsdbg", // 保持 cppvsdbg 兼容 Windows
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "preLaunchTask": "C/C++: g++.exe 生成活动文件",
+            // 修正1：指向 gdb.exe（而非 g++.exe），环境变量已配则直接写
+            "miDebuggerPath": "gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "启用 gdb 美观打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ] // 修正2：确保该数组后有逗号（如果后面还有字段）
+        }
+    ]
+}
