@@ -1,0 +1,107 @@
+# ======================
+# 编译产物 & 可执行文件
+# ======================
+*.exe
+*.out
+*.bin
+*.dll
+*.so
+*.a
+*.o
+*.obj
+*.ilk
+*.pdb
+*.lib
+*.exp
+*.manifest
+
+# CMake 生成文件
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+build/
+_build/
+
+# Makefile 生成
+Makefile
+*.d
+
+# ======================
+# IDE / 编辑器配置
+# ======================
+
+# Visual Studio Code
+.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
+!.vscode/settings.json
+
+# CLion / IntelliJ IDEA
+.idea/
+!.idea/codeStyles/
+!.idea/runConfigurations/
+
+# Visual Studio
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.sdf
+*.opensdf
+*.suo
+ipch/
+.vs/
+
+# Dev-C++
+*.dev
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+.*.swp
+
+# Emacs
+*~
+\#*\#
+
+# ======================
+# 操作系统 & 通用临时文件
+# ======================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.*.swp
+.*~
+
+# ======================
+# 其他
+# ======================
+
+# 日志 & 备份
+*.log
+*.bak
+*.tmp
+*.backup
+
+# 数据文件（如输入输出样例可选择性提交，这里默认忽略）
+*.in
+*.out
+*.txt
+# 如果你想保留某些 .txt（如 README.txt），可以用 !README.txt 覆盖
+
+# Git 默认不跟踪空目录，如果你需要保留某个空目录（如 test/），可在其中放一个 .gitkeep 文件
