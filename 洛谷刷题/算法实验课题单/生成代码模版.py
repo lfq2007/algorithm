@@ -1,7 +1,7 @@
 import os
 
 # 目标文件夹路径（你的指定路径）
-TARGET_DIR = r"D:\学习\Algorithm\洛谷刷题\算法实验课题单"
+TARGET_DIR = r"D:\learn\Algorithm\洛谷刷题\算法实验课题单"
 
 def generate_code_file():
     # 检查目标文件夹是否存在

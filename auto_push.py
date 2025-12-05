@@ -3,7 +3,7 @@ import subprocess
 from datetime import datetime
 
 # 配置：你的本地仓库路径
-repo_path = r"D:\学习\Algorithm"
+repo_path = r"D:\learn\Algorithm"
 
 def run_cmd(cmd, cwd=None):
     """运行 shell 命令，强制使用 UTF-8 编码，避免中文乱码或解码错误"""
